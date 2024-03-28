@@ -8,7 +8,7 @@ function converterDecimal() {
   let binaria = decimal.toString(2);
 
   if (binaria == "NaN" || hexadecimal == "NaN" || octal == "NaN") {
-    msg.innerHTML = `Insira um valor válido. Este é um sistema decimal, aceitamos apenas números.`;
+    msg.innerHTML = `Insira um valor válido. Este é um sistema decimal, <br> aceitamos apenas números.`;
   } else {
     msg.innerHTML = `binário: ${binaria} <br>
   hexadecimal: ${hexadecimal} <br>
@@ -26,7 +26,7 @@ function converterBinario() {
   let octal = val.toString(8);
 
   if (decimal == "NaN" || hexadecimal == "NaN" || octal == "NaN") {
-    msg.innerHTML = `Insira um valor válido. Este é um sistema binário, aceitamos apenas 1 e 0.`;
+    msg.innerHTML = `Insira um valor válido. Este é um sistema binário, <br> aceitamos apenas 1 e 0.`;
   } else {
     msg.innerHTML = `Decimal: ${decimal} <br>
   hexadecimal: ${hexadecimal} <br>
@@ -43,7 +43,7 @@ function converterHexa() {
   let binaria = val.toString(2);
 
   if (decimal == "NaN" || octal == "NaN" || binaria == "NaN") {
-    msg.innerHTML = `Insira um valor válido. Este é um sistema hexadecimal, só aceitamos letras até o F.`;
+    msg.innerHTML = `Insira um valor válido. Este é um sistema hexadecimal, <br> só aceitamos letras até o F.`;
   } else {
     msg.innerHTML = `Decimal: ${decimal} <br>
   octal: ${octal} <br>
@@ -60,7 +60,7 @@ function converterOctal() {
   let binaria = val.toString(2);
 
   if (decimal == "NaN" || hexadecimal == "NaN" || binaria == "NaN") {
-    msg.innerHTML = `Insira um valor válido. Este é um sistema octal. Só aceitamos números <= 7`;
+    msg.innerHTML = `Insira um valor válido. Este é um sistema octal. <br> Só aceitamos números <= 7`;
   } else {
     msg.innerHTML = `Decimal: ${decimal} <br>
   hexadecimal: ${hexadecimal} <br>
